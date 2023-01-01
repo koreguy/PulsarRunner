@@ -81,11 +81,11 @@ namespace PulsarRunner
             DateTime dt = DateTime.Now.AddYears(-1);
             SYSTEMTIME st = new SYSTEMTIME();
             st.wYear = ConvertToShort(dt.Year);
-            st.wMonth = ConvertToShort(dt.Month);
-            st.wDay = ConvertToShort(dt.Day);
-            st.wHour = ConvertToShort(dt.Hour);
-            st.wMinute = ConvertToShort(dt.Minute);
-            st.wSecond = ConvertToShort(dt.Second);
+            st.wMonth = 1;
+            st.wDay = 1;
+            st.wHour = 1;
+            st.wMinute = 1;
+            st.wSecond = 1;
 
             SetSystemTime(ref st);
 
